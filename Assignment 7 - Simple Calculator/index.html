@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 - Simple Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="history-container">
+            <input type="text" class="history-value" placeholder="0">
+        </div>
+        <input type="text" class="input" placeholder="0">
+
+        <div class="calculator-buttons">
+            <button class="calc-button operator clear" onclick="clearOutput()">C</button>
+            <button class="calc-button operator ce" onclick="backspace()">CE</button>
+            <button class="calc-button operator modulus" onclick="setNumber('%')">%</button>
+            <button class="calc-button operator divide" onclick="setNumber('/')">&divide;</button>
+
+            <button class="calc-button " onclick="setNumber('7')">7</button>
+            <button class="calc-button" onclick="setNumber('8')">8</button>
+            <button class="calc-button" onclick="setNumber('9')">9</button>
+            <button class="calc-button operator times" onclick="setNumber('*')">&times;</button>
+
+            <button class="calc-button" onclick="setNumber('4')">4</button>
+            <button class="calc-button" onclick="setNumber('5')">5</button>
+            <button class="calc-button" onclick="setNumber('6')">6</button>
+            <button class="calc-button operator minus" onclick="setNumber('-')">&minus;</button>
+
+            <button class="calc-button" onclick="setNumber('1')">1</button>
+            <button class="calc-button" onclick="setNumber('2')">2</button>
+            <button class="calc-button" onclick="setNumber('3')">3</button>
+            <button class="calc-button operator plus" onclick="setNumber('+')">&plus;</button>
+
+            <button class="calc-button zero" onclick="setNumber('0')">0</button>
+            <button class="calc-button operator equals" onclick="calulateInputs()">&equals;</button>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
